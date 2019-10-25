@@ -7,7 +7,7 @@ import PIL
 from PIL import Image
 
 
-original_path = './Dataset/original_data/Other/AtopicDermatitis/arm'
+original_path = './Dataset/original_data/AtopicDermatitis/arm'
 base_path = '.'
 
 
@@ -69,7 +69,7 @@ def main():
     original_all = sorted(glob.glob(os.path.join(original_path, '*.jpg')), key=natural_key)
 
     # Make the output directories
-    base_out = os.path.join(base_path, 'norm_vt_')
+    base_out = os.path.join(base_path, 'norm_ad_arm')
     os.makedirs(base_out, exist_ok=True)
 
     procs = dict()

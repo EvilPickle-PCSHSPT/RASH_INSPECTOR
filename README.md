@@ -11,4 +11,4 @@ We split into 2 part
     
     You can clone then install the requirements.txt
 
-/Users/waranthornchansawang/Desktop/Screen Shot 2562-11-30 at 20.57.48.png
+![alt text](https://github.com/filmer2002/RASH_INSPECTOR/blob/master/HOME.png)

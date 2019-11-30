@@ -14,6 +14,7 @@ We split into 2 parts
     
     You can clone then pip(3) install the requirements.txt
     
+Link for clone dataset https://github.com/evilpickleisef/RASH_INSPECTOR_DATA    
 Use Python for Machine Learning Part and Flask API.
 
 Use HTML, CSS, and JavaScript for Website.

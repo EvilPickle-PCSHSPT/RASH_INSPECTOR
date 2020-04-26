@@ -2,7 +2,7 @@
 
 This is RASH INSPECTOR repositories.
 
-Developed by EvilPickle Team @ Princess Chulabhorn Science High School.
+Developed by EvilPickle Team @ Princess Chulabhorn Science High School Pathum Thani.
 
 We split into 2 parts
 

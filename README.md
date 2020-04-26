@@ -9,6 +9,7 @@ We split into 2 parts
 1. Machine Learning
 
     1.1 Support Vector Machine (SVM)
+    
     1.2 Convolutional Neural Network (CNN)
     
 2. Web Application

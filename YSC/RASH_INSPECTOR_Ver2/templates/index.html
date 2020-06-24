@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    .labeling{
+    position:absolute;
+    margin:auto;
+    left:0;
+    right:0;
+    text-align:center;
+    top: calc(300px + 50vh);
+}
+
+.text{
+    position: absolute;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: calc(32.5vh + 500px);
+    width:80%;
+    margin: 10%;
+	text-align: justify;
+    font-size: 20px;
+    background:rgb(0,0,0,.1);
+    margin-top:px;
+    padding:30px;
+}
+
+.header{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+</style>
+
+<head>
+    <script src="https://kit.fontawesome.com/5ce9a0dd1d.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RASH INSPECTOR</title>
+    <link rel="icon" type="image/png" sizes="72x72" href="static/Logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body style="overflow-y: scroll">
+    <nav>
+        <div class="logo">
+            <h4>RASH INSPECTOR</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/index.html"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+                <a href="/predict.html"><i class="fas fa-question-circle"></i> Predict</a>
+            </li>
+            <li>
+                <a href="/helpus.html"><i class="fas fa-hands-helping"></i> Help Us</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-phone fa-flip-horizontal"></i> Contact</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class='rectangle'>Please choose your image or take a new one</div>
+    <div class="row-1">
+        <div class="pic-pre">
+            <img id="rectangle-pic-preview" style="max-width: 300px; max-height: 300px;
+                left: 0;
+                right: 0;
+                top: 32.5vh;
+                position: absolute;
+                margin: auto; "src="{{imagesource}}"></img></br>
+        </div>
+        <div class="button-set-1">
+           <form action="" method=post enctype=multipart/form-data>
+            <input type="file" name="file" class="choose-file" onchange="document.getElementById('rectangle-pic-preview').src = window.URL.createObjectURL(this.files[0])" />
+            <button type="submit" value=Upload class="upload">Upload</button>
+            </form>
+        </div>
+    </div>
+    <div class="row-2">
+        <div class="rectangle pred" style="position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: calc(300px + 40vh);
+        border: 3px solid rgb(72, 189, 160);
+        border-radius: 10px;">Prediction</div>
+    </div>
+
+    <div class="labeling">
+            {{label_eng}}</br>
+            {{label_th}}
+    </div>
+    <div class="text">
+        <text class="header">Atopic Dermatitis</text></br>
+        <u>Symptoms</u>
+        <br>
+        Red rash to grayish brown especially at the wrist, the ankle and the elbow. If chronic, the skin will be dry, thick and dark circles will be visible.
+        </br>
+        <u>Initial Treatment</u>
+        </br>
+        - Avoid wearing clothes with rough textures that can causes irritation, ex. Synthetic Fabric or Wool.(Suitable clothes are cotton clothes)
+        </br>
+        - Avoid staying under direct sunlight.
+        </br>
+        - Avoid stimulants that can cause irritation and scratching.
+        </br>
+        <u>Consultation-needed cases</u>
+        <br>
+        - Feeling ill
+        <br>
+        - Having an effect on sleeping or daily routines
+        <br>
+        - Being infected or/with visible abscess<br>
+        <br>
+        <br>
+        <text class="header">Other skin lesions</text>
+        </br>
+        Doctor consultation within 24 hours is appropiate. The affecting skin lesions could be life threatening.
+    </div>
+</body>
+
+<script src="/static/app.js"></script>
+<script src="https://kit.fontawesome.com/5ce9a0dd1d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+        const realFileBtn = document.getElementById("real-file");
+        const customBtn = document.getElementById("custom-button");
+        const customTxt = document.getElementById("custom-text");
+
+        customBtn.addEventListener("click", function () {
+            realFileBtn.click();
+        });
+    </script>
+</html>
